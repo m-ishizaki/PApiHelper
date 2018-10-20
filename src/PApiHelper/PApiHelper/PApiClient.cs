@@ -74,7 +74,7 @@ namespace PApiHelper
     public class PApiItem
     {
         public long? SiteId { get; set; }
-        public DateTime? UpdatedTime { get; set; }
+        public DateTimeOffset? UpdatedTime { get; set; }
         public long? ResultId { get; set; }
         public long? IssueId { get; set; }
         public long? Ver { get; set; }
@@ -242,7 +242,7 @@ namespace PApiHelper
         public string Comments { get; set; }
         public decimal? Creator { get; set; }
         public decimal? Updator { get; set; }
-        public DateTime? CreatedTime { get; set; }
+        public DateTimeOffset? CreatedTime { get; set; }
         public string ItemTitle { get; set; }
     }
 }
