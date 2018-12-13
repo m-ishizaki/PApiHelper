@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>rksoftware</Company>
+    <Authors>m-ishizaki</Authors>
+    <PackageLicenseUrl>https://github.com/m-ishizaki/PApiHelper/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/m-ishizaki/PApiHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/m-ishizaki/PApiHelper</RepositoryUrl>
+    <Copyright>m-ishizaki</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
