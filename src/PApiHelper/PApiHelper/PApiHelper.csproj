@@ -8,6 +8,8 @@
     <PackageProjectUrl>https://github.com/m-ishizaki/PApiHelper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/m-ishizaki/PApiHelper</RepositoryUrl>
     <Copyright>m-ishizaki</Copyright>
+    <Version>1.0.1</Version>
+    <Description>Easy API client classes for P!.</Description>
   </PropertyGroup>
 
   <ItemGroup>

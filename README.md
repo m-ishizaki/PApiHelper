@@ -29,6 +29,6 @@ var apiClient = new PApiHelper.PApiClient
     var responseData = await apiClient.PostUpdateItemsAsync(<Update するデータのID>, new PApiItem() { Title = "Update Title" });
 }
 {// Item のDelete
-    var responseData = await apiClient.PostDeleteItemsAsync(<Delet するデータのID>, new PApiItem() { });
+    var responseData = await apiClient.PostDeleteItemsAsync(<Delete するデータのID>, new PApiItem() { });
 }
 ```

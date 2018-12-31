@@ -35,8 +35,16 @@ namespace PApiHelper
 
             var response = await http.PostAsync($"{baseUrl}/api/{apiName}/{id}/{apiMethod}", content);
             var responseContentString = await response?.Content?.ReadAsStringAsync();
-            var responseContent = JsonConvert.DeserializeObject<T>(responseContentString);
-            return responseContent;
+            try
+            {
+                var responseContent = JsonConvert.DeserializeObject<T>(responseContentString);
+                responseContent.StringContent = responseContentString;
+                return responseContent;
+            }
+            catch (Exception ex)
+            {
+                throw new PApiHelperException(ex.Message, ex, response);
+            }
         }
 
         public async Task<PApiResponse> PostAsync(string apiName, long id, string apiMethod, PGetApiRequest requestData)
